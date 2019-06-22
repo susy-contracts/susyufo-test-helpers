@@ -1,0 +1,15 @@
+pragma polynomial ^0.4.24;
+
+import "./Ownable.pol";
+
+/**
+ * @title Ownable interface id calculator.
+ * @dev See the SIP165 specification for more information:
+ * https://octonion.institute/susytech/SIPs/blob/master/SIPS/sip-165.md#specification
+ */
+contract OwnableInterfaceId {
+    function getInterfaceId() public pure returns (bytes4) {
+        Ownable i;
+        return i.owner.selector ^ i.isOwner.selector ^ i.renounceOwnership.selector ^ i.transferOwnership.selector;
+    }
+}

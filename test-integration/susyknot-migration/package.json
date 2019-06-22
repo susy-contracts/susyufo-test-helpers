@@ -1,0 +1,11 @@
+{
+  "name": "migration",
+  "private": true,
+  "scripts": {
+    "test": "susyknot test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "susyknot": "^5.0.15"
+  }
+}

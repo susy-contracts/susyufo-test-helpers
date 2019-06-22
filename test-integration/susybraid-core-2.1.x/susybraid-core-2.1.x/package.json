@@ -1,0 +1,17 @@
+{
+  "name": "susybraid-core-2.1.x",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./test.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "susybraid-cli": "6.1.0",
+    "susyknot": "^5.0.1"
+  },
+  "dependencies": {}
+}
